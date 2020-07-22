@@ -1,0 +1,10 @@
+@{
+    ViewData["Title"] = "Home Page";
+}
+@using(Html.BeginForm("DoLogin","Home",FormMethod.Post))
+{
+    <label>Tên tài khoản:</label>
+    <input type="text" name="username" id="username" />
+    <label>Mật khẩu:</label>
+    <input type="text" name="password" id="password" />
+}
